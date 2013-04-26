@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome Note {% endblock %}
+
+{% block content %}
+<fieldset>
+<legend><h1 style="color:olive">{{Event.eventname}}</h1></legend>
+<p> Event :  <strong>{{ Event.description }}</strong>
+<br>Date : {{Event.event_date}} </br>
+<br>Time : {{Event.event_time}} </br>
+
+</br> Organised by {{Event.organizer}}
+</p>
+
+</fieldset>
+{% endblock content %}

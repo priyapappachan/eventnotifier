@@ -1,0 +1,5 @@
+<form method="post">
+    {{ uform.as_p }}
+    {{ pform.as_p }}
+    <input type="submit" value="Done"/>
+</form>

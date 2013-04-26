@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome Note {% endblock %}
+
+{% block content %}
+
+
+<h1 style="color:olive">Blood+ </h1>
+<div>
+
+{% for Blood in list %} 
+
+<h3><p> <strong> {{Blood.name}} on {{Blood.date}}</a></strong>
+ </p>
+</h3>
+Blood group : {{Blood.group}}  | 
+Contact : {{Blood.contact}}  | 
+Posted by : {{Blood.organizer}}
+{% endfor %}
+
+{% endblock content %}

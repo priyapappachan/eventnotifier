@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+<form name="login" action="" method="post" accept-charset="utf-8">{% csrf_token %}
+
+<fieldset>
+<legend>
+<h1 style="color:lightseagreen;">Create Blood Donation Event</h1></legend>
+</br>
+
+<div>
+<label for="name">Description:</label><br>
+<input type="text" name="name" value="" maxlength="100" /><br>
+</div>
+</br>
+
+<div>
+<label for="date">Date:</label><br>
+<input type="text" name="date" value="" maxlength="100" /><br>
+</div>
+</br>
+
+<div>
+<label for="group">Blood Group needed:</label><br>
+<input type="text" name="group" value="" maxlength="100" /><br>
+</div>
+</br>
+
+
+<div>
+<label for="contact">Contact Number:</label><br>
+<input type="text" name="contact" value="" maxlength="3" /><br>
+</div>
+<div>
+
+</br>
+<div>
+<label for="organizer">Your Username</label><br>
+<input type="text" name="organizer" value="" maxlength="100" /><br>
+</div>
+</br>
+
+<div>
+<input type="submit" value="Done" />
+</div>
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome Note {% endblock %}
+
+{% block content %}
+
+
+<h1 style="color:olive">Events </h1>
+<div>
+
+{% for Event in eventlist %} 
+{% ifequal Event.flag "true" %}
+<p><h3><strong> {{Event.event_date}} Event : {{Event.eventname}} </strong><a href=/welcome/events/eventdetail/{{Event.id}}/> >> </a> </h3>
+ </p>
+{% endifequal %}
+{% endfor %}
+
+{% endblock content %}
