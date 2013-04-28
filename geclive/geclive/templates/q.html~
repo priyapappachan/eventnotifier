@@ -1,6 +1,0 @@
-<html>
-
-Priya
-{% for P in plist %}
-	{{P.a}}
-</html>
